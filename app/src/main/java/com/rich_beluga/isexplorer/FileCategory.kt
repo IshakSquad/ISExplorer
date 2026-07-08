@@ -191,7 +191,7 @@ enum class FileCategory(
     ),
     
     UNKNOWN(
-        R.drawable.ic_type_text,
+        R.drawable.ic_type_unknown,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     )
