@@ -197,7 +197,7 @@ class MainActivity : AppCompatActivity() {
         rootView.findViewById<ImageView>(R.id.ivIshakIcon).apply {
             if (showIshak) {
                 visibility = View.VISIBLE
-                loadIshakEasterIcon(this)
+                loadEasterIcon(this)
             } else {
                 visibility = View.GONE
             }
@@ -238,9 +238,9 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun loadIshakEasterIcon(imageView: ImageView) {
+    private fun loadEasterIcon(imageView: ImageView) {
         try {
-            val svg = SVG.getFromAsset(assets, "emoji.svg")
+            val svg = SVG.getFromAsset(assets, "icon.svg")
             imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
             imageView.setImageDrawable(PictureDrawable(svg.renderToPicture()))
         } catch (_: Exception) {
