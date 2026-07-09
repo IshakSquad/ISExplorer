@@ -37,14 +37,14 @@ enum class FileCategory(
         MaterialR.attr.colorOnErrorContainer
     ),
     
-    /* .icrosoft office files (*.docx, *.pptx, etc) */
+    /* microsoft office files (*.docx, *.pptx, etc) */
     DOCUMENT(
         R.drawable.ic_type_doc,
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
     
-    /* Code files */
+    /* code files */
     SHELL(
         R.drawable.ic_type_shell,
         MaterialR.attr.colorSecondaryContainer,
