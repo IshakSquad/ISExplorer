@@ -205,12 +205,12 @@ enum class FileCategory(
     
     /* folders */
     FOLDER(
-        R.drawable.ic_folder,
+        R.drawable.folder,
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
     PARENT_DIR(
-        R.drawable.ic_back,
+        R.drawable.back,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
