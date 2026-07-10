@@ -11,194 +11,194 @@ enum class FileCategory(
 ) {
     /* images */
     IMAGE(
-        R.drawable.ic_type_image,
+        R.drawable.image,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
     
     /* videos */
     VIDEO(
-        R.drawable.ic_type_video,
+        R.drawable.video,
         MaterialR.attr.colorErrorContainer,
         MaterialR.attr.colorOnErrorContainer
     ),
     
     /* audio */
     AUDIO(
-        R.drawable.ic_type_audio,
+        R.drawable.audio,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     
     /* pdf */
     PDF(
-        R.drawable.ic_type_pdf,
+        R.drawable.pdf,
         MaterialR.attr.colorErrorContainer,
         MaterialR.attr.colorOnErrorContainer
     ),
     
     /* microsoft office files (*.docx, *.pptx, etc) */
     DOCUMENT(
-        R.drawable.ic_type_doc,
+        R.drawable.doc,
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
     
     /* code files */
     SHELL(
-        R.drawable.ic_type_shell,
+        R.drawable.shell,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     PYTHON(
-        R.drawable.ic_type_python,
+        R.drawable.python,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     CLANG(
-        R.drawable.ic_type_clang,
+        R.drawable.clang,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     RUST(
-        R.drawable.ic_type_rust,
+        R.drawable.rust,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     GOLANG(
-        R.drawable.ic_type_go,
+        R.drawable.go,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     KOTLIN(
-        R.drawable.ic_type_kotlin,
+        R.drawable.kotlin,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     JAVA(
-        R.drawable.ic_type_java,
+        R.drawable.java,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     CPP(
-        R.drawable.ic_type_cpp,
+        R.drawable.cpp,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     HTML(
-        R.drawable.ic_type_html,
+        R.drawable.html,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     JAVASCRIPT(
-        R.drawable.ic_type_javascript,
+        R.drawable.javascript,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     CSS(
-        R.drawable.ic_type_css,
+        R.drawable.css,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     PHP(
-        R.drawable.ic_type_php,
+        R.drawable.php,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     JSON(
-        R.drawable.ic_type_json,
+        R.drawable.json,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     MARKDOWN(
-        R.drawable.ic_type_markdown,
+        R.drawable.markdown,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     XML(
-        R.drawable.ic_type_xml,
+        R.drawable.xml,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     YAML(
-        R.drawable.ic_type_yaml,
+        R.drawable.yaml,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     GROOVY(
-        R.drawable.ic_type_groovy,
+        R.drawable.groovy,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     TYPESCRIPT(
-        R.drawable.ic_type_typescript,
+        R.drawable.typescript,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     CLASS(
-        R.drawable.ic_type_java,
+        R.drawable.java,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
     CODE(
-        R.drawable.ic_type_shell,
+        R.drawable.shell,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
     
     /* archives */
     ARCHIVE(
-        R.drawable.ic_type_archive,
+        R.drawable.archive,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
     ZIP(
-        R.drawable.ic_type_zip,
+        R.drawable.zip,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
     RAR(
-        R.drawable.ic_type_rar,
+        R.drawable.rar,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
     JAR(
-        R.drawable.ic_type_java,
+        R.drawable.java,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
     
     /* android application */
     APK(
-        R.drawable.ic_type_apk,
+        R.drawable.apk,
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
     
     /* text documents */
     TEXT(
-        R.drawable.ic_type_text,
+        R.drawable.text,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
     
     /* configurations */
     CONFIG(
-        R.drawable.ic_type_config,
+        R.drawable.config,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
     
     /* fonts */
     FONT(
-        R.drawable.ic_type_font,
+        R.drawable.font,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
     
     /* keys */
     KEY(
-        R.drawable.ic_type_key,
+        R.drawable.key,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
@@ -217,7 +217,7 @@ enum class FileCategory(
     
     /* unknown file types */
     UNKNOWN(
-        R.drawable.ic_type_unknown,
+        R.drawable.unknown,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     )
