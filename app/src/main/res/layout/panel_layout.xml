@@ -57,7 +57,7 @@
             android:layout_marginBottom="16dp"
             android:visibility="gone"
             android:text="@string/action_deselect"
-            app:chipIcon="@drawable/ic_action_cancel"
+            app:chipIcon="@drawable/cancel"
             android:elevation="4dp" />
 
     </FrameLayout>
