@@ -189,8 +189,8 @@ enum class FileCategory(
     /* keys */
     KEY(
         R.drawable.ic_type_key,
-        MaterialR.attr.colorPrimaryContainer,
-        MaterialR.attr.colotOnPrimaryContainer
+        MaterialR.attr.colorSurfaceVariant,
+        MaterialR.attr.colorOnSurfaceVariant
     ),
     
     /* folders */
