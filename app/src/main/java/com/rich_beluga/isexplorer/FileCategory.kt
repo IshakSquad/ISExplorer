@@ -135,6 +135,11 @@ enum class FileCategory(
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
+    CLASS(
+        R.drawable.ic_type_java,
+        MaterialR.attr.colorSurfaceVariant,
+        MaterialR.attr.colorOnSurfaceVariant
+    ),
     CODE(
         R.drawable.ic_type_shell,
         MaterialR.attr.colorSecondaryContainer,
@@ -154,6 +159,11 @@ enum class FileCategory(
     ),
     RAR(
         R.drawable.ic_type_rar,
+        MaterialR.attr.colorTertiaryContainer,
+        MaterialR.attr.colorOnTertiaryContainer
+    ),
+    JAR(
+        R.drawable.ic_type_java,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
@@ -199,7 +209,6 @@ enum class FileCategory(
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
-    
     PARENT_DIR(
         R.drawable.ic_back,
         MaterialR.attr.colorSurfaceVariant,

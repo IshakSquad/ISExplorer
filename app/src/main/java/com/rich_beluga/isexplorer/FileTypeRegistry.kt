@@ -58,9 +58,6 @@ object FileTypeRegistry {
         "ods"          to FileCategory.DOCUMENT,
         "odp"          to FileCategory.DOCUMENT,
         "rtf"          to FileCategory.DOCUMENT,
-        "pages"        to FileCategory.DOCUMENT,
-        "numbers"      to FileCategory.DOCUMENT,
-        "key"          to FileCategory.DOCUMENT,
         
         /* code */
         "kt"           to FileCategory.KOTLIN,
@@ -99,12 +96,13 @@ object FileTypeRegistry {
         "cmake"        to FileCategory.CODE,
         "makefile"     to FileCategory.CODE,
         "lua"          to FileCategory.CODE,
-        "r"            to FileCategory.CODE,
         "dart"         to FileCategory.CODE,
         "ex"           to FileCategory.CODE,
         "exs"          to FileCategory.CODE,
         "cs"           to FileCategory.CODE,
         "sql"          to FileCategory.CODE,
+        "smali"        to FileCategory.CODE,
+        "class"        to FileCategory.CLASS,
         
         /* archives */
         "zip"          to FileCategory.ZIP,
@@ -120,6 +118,7 @@ object FileTypeRegistry {
         "deb"          to FileCategory.ARCHIVE,
         "rpm"          to FileCategory.ARCHIVE,
         "iso"          to FileCategory.ARCHIVE,
+        "jar"          to FileCategory.JAR,
         
         /* android packages */
         "apk"          to FileCategory.APK,
