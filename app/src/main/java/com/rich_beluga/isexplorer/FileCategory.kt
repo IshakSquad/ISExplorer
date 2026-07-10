@@ -171,10 +171,26 @@ enum class FileCategory(
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
     ),
+    
+    /* configurations */
     CONFIG(
         R.drawable.ic_type_config,
         MaterialR.attr.colorSurfaceVariant,
         MaterialR.attr.colorOnSurfaceVariant
+    ),
+    
+    /* fonts */
+    FONT(
+        R.drawable.ic_type_font,
+        MaterialR.attr.colorSurfaceVariant,
+        MaterialR.attr.colorOnSurfaceVariant
+    ),
+    
+    /* keys */
+    KEY(
+        R.drawable.ic_type_key,
+        MaterialR.attr.colorPrimaryContainer,
+        MaterialR.attr.colotOnPrimaryContainer
     ),
     
     /* folders */
@@ -190,6 +206,7 @@ enum class FileCategory(
         MaterialR.attr.colorOnSurfaceVariant
     ),
     
+    /* unknown file types */
     UNKNOWN(
         R.drawable.ic_type_unknown,
         MaterialR.attr.colorSurfaceVariant,

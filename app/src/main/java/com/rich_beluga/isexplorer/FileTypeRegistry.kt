@@ -2,6 +2,7 @@ package com.rich_beluga.isexplorer
 
 object FileTypeRegistry {
     private val extensionMap: Map<String, FileCategory> = mapOf(
+        /* images */
         "jpg"          to FileCategory.IMAGE,
         "jpeg"         to FileCategory.IMAGE,
         "png"          to FileCategory.IMAGE,
@@ -18,7 +19,8 @@ object FileTypeRegistry {
         "raw"          to FileCategory.IMAGE,
         "cr2"          to FileCategory.IMAGE,
         "nef"          to FileCategory.IMAGE,
-
+        
+        /* video */
         "mp4"          to FileCategory.VIDEO,
         "mkv"          to FileCategory.VIDEO,
         "avi"          to FileCategory.VIDEO,
@@ -30,7 +32,8 @@ object FileTypeRegistry {
         "ts"           to FileCategory.VIDEO,
         "wmv"          to FileCategory.VIDEO,
         "ogv"          to FileCategory.VIDEO,
-
+        
+        /* audio */
         "mp3"          to FileCategory.AUDIO,
         "flac"         to FileCategory.AUDIO,
         "ogg"          to FileCategory.AUDIO,
@@ -42,9 +45,9 @@ object FileTypeRegistry {
         "ape"          to FileCategory.AUDIO,
         "mid"          to FileCategory.AUDIO,
         "midi"         to FileCategory.AUDIO,
-
+        
+        /* documents */
         "pdf"          to FileCategory.PDF,
-
         "doc"          to FileCategory.DOCUMENT,
         "docx"         to FileCategory.DOCUMENT,
         "xls"          to FileCategory.DOCUMENT,
@@ -58,7 +61,8 @@ object FileTypeRegistry {
         "pages"        to FileCategory.DOCUMENT,
         "numbers"      to FileCategory.DOCUMENT,
         "key"          to FileCategory.DOCUMENT,
-
+        
+        /* code */
         "kt"           to FileCategory.KOTLIN,
         "kts"          to FileCategory.KOTLIN,
         "java"         to FileCategory.JAVA,
@@ -101,7 +105,8 @@ object FileTypeRegistry {
         "exs"          to FileCategory.CODE,
         "cs"           to FileCategory.CODE,
         "sql"          to FileCategory.CODE,
-
+        
+        /* archives */
         "zip"          to FileCategory.ZIP,
         "tar"          to FileCategory.ARCHIVE,
         "gz"           to FileCategory.ARCHIVE,
@@ -115,11 +120,15 @@ object FileTypeRegistry {
         "deb"          to FileCategory.ARCHIVE,
         "rpm"          to FileCategory.ARCHIVE,
         "iso"          to FileCategory.ARCHIVE,
-
+        
+        /* android packages */
         "apk"          to FileCategory.APK,
         "aab"          to FileCategory.APK,
         "xapk"         to FileCategory.APK,
-
+        "apks"         to FileCategory.APK,
+        "apkm"         to FileCategory.APK,
+        
+        /* text */
         "txt"          to FileCategory.TEXT,
         "md"           to FileCategory.MARKDOWN,
         "markdown"     to FileCategory.MARKDOWN,
@@ -130,7 +139,17 @@ object FileTypeRegistry {
         "properties"   to FileCategory.TEXT,
         "env"          to FileCategory.TEXT,
         "gitignore"    to FileCategory.TEXT,
-        "editorconfig" to FileCategory.TEXT
+        "editorconfig" to FileCategory.TEXT,
+        
+        /* fonts */
+        "ttf"          to FileCategory.FONT,
+        "otf"          to FileCategory.FONT,
+        "ttc"          to FileCategory.FONT,
+        
+        /* keys */
+        "pem"          to FileCategory.KEY,
+        "pk8"          to FileCategory.KEY,
+        "jks"          to FileCategory.KEY
     )
 
     fun getCategory(extension: String): FileCategory =
