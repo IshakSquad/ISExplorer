@@ -55,21 +55,6 @@ enum class FileCategory(
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
-    CLANG(
-        R.drawable.clang,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    RUST(
-        R.drawable.rust,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    GOLANG(
-        R.drawable.go,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
     KOTLIN(
         R.drawable.kotlin,
         MaterialR.attr.colorSecondaryContainer,
@@ -80,18 +65,8 @@ enum class FileCategory(
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
-    CPP(
-        R.drawable.cpp,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
     HTML(
         R.drawable.html,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    JAVASCRIPT(
-        R.drawable.javascript,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
@@ -105,33 +80,8 @@ enum class FileCategory(
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
-    JSON(
-        R.drawable.json,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
     MARKDOWN(
         R.drawable.markdown,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    XML(
-        R.drawable.xml,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    YAML(
-        R.drawable.yaml,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    GROOVY(
-        R.drawable.groovy,
-        MaterialR.attr.colorSecondaryContainer,
-        MaterialR.attr.colorOnSecondaryContainer
-    ),
-    TYPESCRIPT(
-        R.drawable.typescript,
         MaterialR.attr.colorSecondaryContainer,
         MaterialR.attr.colorOnSecondaryContainer
     ),
@@ -149,11 +99,6 @@ enum class FileCategory(
     /* archives */
     ARCHIVE(
         R.drawable.archive,
-        MaterialR.attr.colorTertiaryContainer,
-        MaterialR.attr.colorOnTertiaryContainer
-    ),
-    ZIP(
-        R.drawable.zip,
         MaterialR.attr.colorTertiaryContainer,
         MaterialR.attr.colorOnTertiaryContainer
     ),
