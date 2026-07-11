@@ -43,6 +43,11 @@ enum class FileCategory(
         MaterialR.attr.colorPrimaryContainer,
         MaterialR.attr.colorOnPrimaryContainer
     ),
+    XLS(
+        R.drawable.xls,
+        MaterialR.attr.colorPrimaryContainer,
+        MaterialR.attr.colorOnPrimaryContainer
+    ),
     
     /* code files */
     SHELL(
