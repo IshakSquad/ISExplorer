@@ -100,7 +100,6 @@ object FileTypeRegistry {
         "ex"           to FileCategory.CODE,
         "exs"          to FileCategory.CODE,
         "cs"           to FileCategory.CODE,
-        "sql"          to FileCategory.CODE,
         "smali"        to FileCategory.CODE,
         "class"        to FileCategory.CLASS,
         "asm"          to FileCategory.CODE,
@@ -150,7 +149,11 @@ object FileTypeRegistry {
         /* keys */
         "pem"          to FileCategory.KEY,
         "pk8"          to FileCategory.KEY,
-        "jks"          to FileCategory.KEY
+        "jks"          to FileCategory.KEY,
+        
+        /* databases */
+        "db"           to FileCategory.DATABASE,
+        "sql"          to FileCategory.DATABASE
     )
 
     fun getCategory(extension: String): FileCategory =

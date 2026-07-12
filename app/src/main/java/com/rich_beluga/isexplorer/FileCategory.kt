@@ -153,6 +153,13 @@ enum class FileCategory(
         MaterialR.attr.colorOnSurfaceVariant
     ),
     
+    /* databases */
+    DATABASE(
+        R.drawable.database,
+        MaterialR.attr.colorTertiaryContainer,
+        MaterialR.attr.colorOnTertiaryContainer
+    ),
+    
     /* folders */
     FOLDER(
         R.drawable.folder,
