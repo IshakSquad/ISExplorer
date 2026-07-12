@@ -24,7 +24,6 @@ class FilePanelController(
     private val pathView: TextView,
     private val loadingIndicator: LoadingIndicator,
     private val clearSelectionChip: Chip,
-    initialPath: String,
     private val scope: CoroutineScope,
     private val onActivated: (FilePanelController) -> Unit,
     private val onContextMenu: (
@@ -36,7 +35,7 @@ class FilePanelController(
 ) {
 
     companion object {
-        private const val MIN_LOADING_VISIBLE_MS = 350L
+        private const val MIN_LOADING_VISIBLE_MS = 180L
     }
 
     var currentDir: File = File("/storage/emulated/0/")
