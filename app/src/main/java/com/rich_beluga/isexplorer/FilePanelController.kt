@@ -24,6 +24,7 @@ class FilePanelController(
     private val pathView: TextView,
     private val loadingIndicator: LoadingIndicator,
     private val clearSelectionChip: Chip,
+    initialPath: String,
     private val scope: CoroutineScope,
     private val onActivated: (FilePanelController) -> Unit,
     private val onContextMenu: (
