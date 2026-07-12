@@ -103,6 +103,8 @@ object FileTypeRegistry {
         "sql"          to FileCategory.CODE,
         "smali"        to FileCategory.CODE,
         "class"        to FileCategory.CLASS,
+        "asm"          to FileCategory.CODE,
+        "s"            to FileCategory.CODE,
         
         /* archives */
         "zip"          to FileCategory.ARCHIVE,
