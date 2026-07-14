@@ -1,5 +1,8 @@
 <div align="center">
-# <img src="./assets/icon.png" width="56" height="56" alt="icon" />&nbspISExplorer
+
+<img src="./assets/icon.png" width="100" height="100" alt="icon" />
+
+# ISExplorer
 
 Файловый менеджер с **Material Design 3** для Android
 
