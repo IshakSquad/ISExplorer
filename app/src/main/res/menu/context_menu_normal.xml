@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/ctx_copy"
         android:title="@string/action_copy"
-        android:icon="@drawable/ic_action_copy" />
+        android:icon="@drawable/copy" />
     <item android:id="@+id/ctx_move"
         android:title="@string/action_move"
-        android:icon="@drawable/ic_action_move" />
+        android:icon="@drawable/move" />
     <item android:id="@+id/ctx_delete"
         android:title="@string/action_delete"
-        android:icon="@drawable/ic_action_delete" />
+        android:icon="@drawable/delete" />
     <item android:id="@+id/ctx_deselect"
         android:title="@string/action_deselect"
-        android:icon="@drawable/ic_action_cancel" />
+        android:icon="@drawable/cancel" />
 </menu>

@@ -36,7 +36,7 @@ class FilePanelController(
 ) {
 
     companion object {
-        private const val MIN_LOADING_VISIBLE_MS = 350L
+        private const val MIN_LOADING_VISIBLE_MS = 180L
     }
 
     var currentDir: File = File("/storage/emulated/0/")

@@ -10,11 +10,10 @@ build() {
     echo -e "\e[2m -----------------------------------------${reset}"
 
     arch=$(uname -m)
-    pwd=$(pwd)
 
     case "$arch" in
         aarch64|arm64|armv7l|armv8l|arm)
-            ./gradlew -Pandroid.aapt2FromMavenOverride="${pwd}/bin/aapt2" build
+            ./gradlew -Pandroid.aapt2FromMavenOverride="$(pwd)/bin/aapt2" build
         ;;
         
         *)

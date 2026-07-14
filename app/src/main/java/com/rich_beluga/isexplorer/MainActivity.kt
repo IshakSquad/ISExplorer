@@ -139,10 +139,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         val actions = listOf(
-            ContextAction(R.drawable.ic_action_copy, R.string.action_copy, R.id.ctx_copy),
-            ContextAction(R.drawable.ic_action_move, R.string.action_move, R.id.ctx_move),
-            ContextAction(R.drawable.ic_action_delete, R.string.action_delete, R.id.ctx_delete, isDanger = true),
-            ContextAction(R.drawable.ic_action_cancel, R.string.action_deselect, R.id.ctx_deselect)
+            ContextAction(R.drawable.copy, R.string.action_copy, R.id.ctx_copy),
+            ContextAction(R.drawable.move, R.string.action_move, R.id.ctx_move),
+            ContextAction(R.drawable.delete, R.string.action_delete, R.id.ctx_delete, isDanger = true),
+            ContextAction(R.drawable.cancel, R.string.action_deselect, R.id.ctx_deselect)
         )
 
         showActionsBottomSheet(
@@ -169,10 +169,10 @@ class MainActivity : AppCompatActivity() {
         sourcePanel: FilePanelController
     ) {
         val actions = listOf(
-            ContextAction(R.drawable.ic_action_copy, R.string.action_copy, R.id.ctx_copy),
-            ContextAction(R.drawable.ic_action_move, R.string.action_move, R.id.ctx_move),
-            ContextAction(R.drawable.ic_action_delete, R.string.action_delete, R.id.ctx_delete, isDanger = true),
-            ContextAction(R.drawable.ic_action_cancel, R.string.action_deselect, R.id.ctx_deselect)
+            ContextAction(R.drawable.copy, R.string.action_copy, R.id.ctx_copy),
+            ContextAction(R.drawable.move, R.string.action_move, R.id.ctx_move),
+            ContextAction(R.drawable.delete, R.string.action_delete, R.id.ctx_delete, isDanger = true),
+            ContextAction(R.drawable.cancel, R.string.action_deselect, R.id.ctx_deselect)
         )
 
         showActionsBottomSheet(
@@ -197,7 +197,7 @@ class MainActivity : AppCompatActivity() {
         rootView.findViewById<ImageView>(R.id.ivIshakIcon).apply {
             if (showIshak) {
                 visibility = View.VISIBLE
-                loadIshakEasterIcon(this)
+                loadEasterIcon(this)
             } else {
                 visibility = View.GONE
             }
@@ -238,9 +238,9 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun loadIshakEasterIcon(imageView: ImageView) {
+    private fun loadEasterIcon(imageView: ImageView) {
         try {
-            val svg = SVG.getFromAsset(assets, "emoji.svg")
+            val svg = SVG.getFromAsset(assets, "icon.svg")
             imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
             imageView.setImageDrawable(PictureDrawable(svg.renderToPicture()))
         } catch (_: Exception) {

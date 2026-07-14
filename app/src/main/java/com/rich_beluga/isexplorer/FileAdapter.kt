@@ -131,10 +131,10 @@ class FileAdapter(
     private fun buildFileInfoString(item: FileItem): String {
         val bytes = item.file.length()
         val sizeText = when {
-            bytes < 1_024         -> "$bytes Б"
-            bytes < 1_048_576     -> "%.1f КБ".format(bytes / 1_024.0)
-            bytes < 1_073_741_824 -> "%.1f МБ".format(bytes / 1_048_576.0)
-            else                  -> "%.2f ГБ".format(bytes / 1_073_741_824.0)
+            bytes < 1_024         -> "$bytes B"
+            bytes < 1_048_576     -> "%.1f Kb".format(bytes / 1_024.0)
+            bytes < 1_073_741_824 -> "%.1f Mb".format(bytes / 1_048_576.0)
+            else                  -> "%.2f Gb".format(bytes / 1_073_741_824.0)
         }
         val dateText = DateFormat.getDateInstance(DateFormat.SHORT).format(Date(item.file.lastModified()))
         return "$sizeText • $dateText"

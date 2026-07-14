@@ -2,6 +2,7 @@ package com.rich_beluga.isexplorer
 
 object FileTypeRegistry {
     private val extensionMap: Map<String, FileCategory> = mapOf(
+        /* images */
         "jpg"          to FileCategory.IMAGE,
         "jpeg"         to FileCategory.IMAGE,
         "png"          to FileCategory.IMAGE,
@@ -18,7 +19,8 @@ object FileTypeRegistry {
         "raw"          to FileCategory.IMAGE,
         "cr2"          to FileCategory.IMAGE,
         "nef"          to FileCategory.IMAGE,
-
+        
+        /* video */
         "mp4"          to FileCategory.VIDEO,
         "mkv"          to FileCategory.VIDEO,
         "avi"          to FileCategory.VIDEO,
@@ -30,7 +32,8 @@ object FileTypeRegistry {
         "ts"           to FileCategory.VIDEO,
         "wmv"          to FileCategory.VIDEO,
         "ogv"          to FileCategory.VIDEO,
-
+        
+        /* audio */
         "mp3"          to FileCategory.AUDIO,
         "flac"         to FileCategory.AUDIO,
         "ogg"          to FileCategory.AUDIO,
@@ -42,27 +45,25 @@ object FileTypeRegistry {
         "ape"          to FileCategory.AUDIO,
         "mid"          to FileCategory.AUDIO,
         "midi"         to FileCategory.AUDIO,
-
+        
+        /* documents */
         "pdf"          to FileCategory.PDF,
-
         "doc"          to FileCategory.DOCUMENT,
         "docx"         to FileCategory.DOCUMENT,
-        "xls"          to FileCategory.DOCUMENT,
-        "xlsx"         to FileCategory.DOCUMENT,
+        "xls"          to FileCategory.XLS,
+        "xlsx"         to FileCategory.XLS,
         "ppt"          to FileCategory.DOCUMENT,
         "pptx"         to FileCategory.DOCUMENT,
         "odt"          to FileCategory.DOCUMENT,
         "ods"          to FileCategory.DOCUMENT,
         "odp"          to FileCategory.DOCUMENT,
         "rtf"          to FileCategory.DOCUMENT,
-        "pages"        to FileCategory.DOCUMENT,
-        "numbers"      to FileCategory.DOCUMENT,
-        "key"          to FileCategory.DOCUMENT,
-
-        "kt"           to FileCategory.CODE,
-        "kts"          to FileCategory.CODE,
-        "java"         to FileCategory.CODE,
-        "py"           to FileCategory.CODE,
+        
+        /* code */
+        "kt"           to FileCategory.KOTLIN,
+        "kts"          to FileCategory.KOTLIN,
+        "java"         to FileCategory.JAVA,
+        "py"           to FileCategory.PYTHON,
         "js"           to FileCategory.CODE,
         "jsx"          to FileCategory.CODE,
         "ts"           to FileCategory.CODE,
@@ -75,15 +76,15 @@ object FileTypeRegistry {
         "hpp"          to FileCategory.CODE,
         "go"           to FileCategory.CODE,
         "rb"           to FileCategory.CODE,
-        "php"          to FileCategory.CODE,
+        "php"          to FileCategory.PHP,
         "swift"        to FileCategory.CODE,
-        "sh"           to FileCategory.CODE,
-        "bash"         to FileCategory.CODE,
-        "fish"         to FileCategory.CODE,
-        "zsh"          to FileCategory.CODE,
-        "html"         to FileCategory.CODE,
-        "htm"          to FileCategory.CODE,
-        "css"          to FileCategory.CODE,
+        "sh"           to FileCategory.SHELL,
+        "bash"         to FileCategory.SHELL,
+        "fish"         to FileCategory.SHELL,
+        "zsh"          to FileCategory.SHELL,
+        "html"         to FileCategory.HTML,
+        "htm"          to FileCategory.HTML,
+        "css"          to FileCategory.CSS,
         "scss"         to FileCategory.CODE,
         "xml"          to FileCategory.CODE,
         "json"         to FileCategory.CODE,
@@ -95,13 +96,16 @@ object FileTypeRegistry {
         "cmake"        to FileCategory.CODE,
         "makefile"     to FileCategory.CODE,
         "lua"          to FileCategory.CODE,
-        "r"            to FileCategory.CODE,
         "dart"         to FileCategory.CODE,
         "ex"           to FileCategory.CODE,
         "exs"          to FileCategory.CODE,
         "cs"           to FileCategory.CODE,
-        "sql"          to FileCategory.CODE,
-
+        "smali"        to FileCategory.CODE,
+        "class"        to FileCategory.CLASS,
+        "asm"          to FileCategory.CODE,
+        "s"            to FileCategory.CODE,
+        
+        /* archives */
         "zip"          to FileCategory.ARCHIVE,
         "tar"          to FileCategory.ARCHIVE,
         "gz"           to FileCategory.ARCHIVE,
@@ -109,28 +113,47 @@ object FileTypeRegistry {
         "xz"           to FileCategory.ARCHIVE,
         "zst"          to FileCategory.ARCHIVE,
         "7z"           to FileCategory.ARCHIVE,
-        "rar"          to FileCategory.ARCHIVE,
+        "rar"          to FileCategory.RAR,
         "lz4"          to FileCategory.ARCHIVE,
         "lzma"         to FileCategory.ARCHIVE,
         "deb"          to FileCategory.ARCHIVE,
         "rpm"          to FileCategory.ARCHIVE,
         "iso"          to FileCategory.ARCHIVE,
-
+        "jar"          to FileCategory.JAR,
+        
+        /* android packages */
         "apk"          to FileCategory.APK,
         "aab"          to FileCategory.APK,
         "xapk"         to FileCategory.APK,
-
+        "apks"         to FileCategory.APK,
+        "apkm"         to FileCategory.APK,
+        
+        /* text */
         "txt"          to FileCategory.TEXT,
-        "md"           to FileCategory.TEXT,
-        "markdown"     to FileCategory.TEXT,
+        "md"           to FileCategory.MARKDOWN,
+        "markdown"     to FileCategory.MARKDOWN,
         "log"          to FileCategory.TEXT,
         "ini"          to FileCategory.TEXT,
-        "conf"         to FileCategory.TEXT,
-        "cfg"          to FileCategory.TEXT,
+        "conf"         to FileCategory.CONFIG,
+        "cfg"          to FileCategory.CONFIG,
         "properties"   to FileCategory.TEXT,
         "env"          to FileCategory.TEXT,
         "gitignore"    to FileCategory.TEXT,
-        "editorconfig" to FileCategory.TEXT
+        "editorconfig" to FileCategory.TEXT,
+        
+        /* fonts */
+        "ttf"          to FileCategory.FONT,
+        "otf"          to FileCategory.FONT,
+        "ttc"          to FileCategory.FONT,
+        
+        /* keys */
+        "pem"          to FileCategory.KEY,
+        "pk8"          to FileCategory.KEY,
+        "jks"          to FileCategory.KEY,
+        
+        /* databases */
+        "db"           to FileCategory.DATABASE,
+        "sql"          to FileCategory.DATABASE
     )
 
     fun getCategory(extension: String): FileCategory =
